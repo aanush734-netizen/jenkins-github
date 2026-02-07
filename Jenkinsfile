@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('test') {
-            steps {
-                echo 'testing...'
-            }
-        }
-
         stage('stage') {
             steps {
                 echo 'staging...'
+            }
+        }
+
+        stage('commit') {
+            steps {
+                echo 'commiting...'
             }
         }
 
